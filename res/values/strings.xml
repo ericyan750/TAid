@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TAid</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_options">Options</string>
+    <string name="button_add">Add Tutorial</string>
+    <string name="button_exit">Exit</string>
+    <string name="button_email">Email</string>
+    <string name="title_activity_add_tutorial">Add Tutorial</string>
+    <string name="enter_class">Class Name</string>
+    <string name="enter_room">Location</string>
+    <string name="enter_date">Date and Time</string>
+    <string name="button_lesson">Add lesson plan</string>
+    <string name="button_done">Done</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="class_name_prompt">Enter the course code</string>
+    <string name="tutorial_location_prompt">Enter the room number</string>
+    <string name="lesson_plan_prompt">Enter a lesson plan</string>
+    <string name="tutorial_students_prompt">Enter the students\' names\nFormat: name,email,id,mark1,mark2,\.\.\.</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="professor_name_prompt">Enter the professor\'s name</string>
+    <string name="tutorial_reminder">Remind me</string>
+    <string name="reminder_time">10</string>
+    <string name="tutorial_reminder2">minutes before the tutorial starts.</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_edit_tutorial">EditTutorialActivity</string>
+    <string name="title_activity_email">EmailActivity</string>
+    <string name="email_recipient">Enter e-mail recipient: (Double tap to select from a list)</string>
+    <string name="email_subject">Enter email subject:</string>
+    <string name="email_message">Enter the body of the e-mail:</string>
+    <string name="button_send">Send</string>
+    <string name="tutorial_class">CLASS</string>
+    <string name="professor">PROFESSOR</string>
+    <string name="location">LOCATION</string>
+    <string name="lesson_plan">LESSON PLAN</string>
+    <string name="students">STUDENTS</string>
+    <string name="button_attach_grades">Attach Grades</string>
+    <string name="reminder_message">Enter a reminder message</string>
+    <string name="button_remove">Remove Tutorial</string>
+    <string name="title_activity_show_students">Students</string>
+    <string name="button_students">Show Class List</string>
+    <string name="title_activity_edit_comment">Comment</string>
+    <string name="comment_prompt">Enter comments</string>
+    <string name="student_list">Students in this tutorial, click to mark attendance, long click to add coment</string>
+    <string name="tutorial_header">Your Tutorials:</string>
+    <string name="title_activity_choose_file">ChooseFile</string>
+    <string name="button_load_file">Load file</string>
+    <string name="button_assignments">Show assignments</string>
+    <string name="tutorial_section_prompt">Enter the tutorial\'s section</string>
+    <string name="tutorial_section">SECTION</string>
+    <string name="title_activity_show_assignments">ShowAssignmentsActivity</string>
+    <string name="assignment_list">Assignments, click to view teams</string>
+    <string name="title_activity_view_teams">ViewTeamsActivity</string>
+    <string name="team_list">
+        <![CDATA[Group list
+        Single click a Group to adjust the group\'s grade
+        Single click a student to adjust his/her grade
+        ]]>
+    </string>
+	<string name="button_load_grades_file">Load Grades File</string>
+	<string name="button_load_lessonplan_file">Load LessonPlan File</string>
+	<string name="button_load_courses">Load Courses</string>
+	<string name="course_header">Your Lectures:</string>
+	<string name="professor_email">PROFESSOR\'S EMAIL:</string>
+	<string name="professor_email_prompt">Enter professor\'s e-mail</string>
+	<string name="button_load_teams_file">Load Teams File</string>
+</resources>

@@ -1,0 +1,269 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:text="@string/tutorial_class" />
+	
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="?android:attr/dividerVertical" />
+	    
+	    <EditText android:id="@+id/edit_class"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:inputType="text" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:text="@string/tutorial_section" />
+	
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="?android:attr/dividerVertical" />
+	    
+	    <EditText android:id="@+id/edit_section"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:inputType="text" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:text="@string/professor" />
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="?android:attr/dividerVertical" />
+	    
+	    <EditText android:id="@+id/edit_professor"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+	        android:inputType="text" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:text="@string/professor_email" />
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="?android:attr/dividerVertical" />
+	    
+	    <EditText android:id="@+id/professor_email"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:text="@string/location" />
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="?android:attr/dividerVertical" />
+	    
+	    <EditText android:id="@+id/edit_location"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+	        android:inputType="text" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:text="@string/lesson_plan" />
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="?android:attr/dividerVertical" />
+	    
+	    <HorizontalScrollView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        
+		    <EditText android:id="@+id/edit_lesson_plan"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+		        android:hint="@string/lesson_plan_prompt" />
+		</HorizontalScrollView>
+	    
+
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="?android:attr/dividerVertical" />
+
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="48dp" >
+
+			<Button
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentTop="true"
+			    android:layout_centerHorizontal="true"
+			    android:background="?android:attr/selectableItemBackground"
+			    android:onClick="removeTut"
+			    android:text="@string/button_remove" />
+
+		</RelativeLayout>
+		
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="?android:attr/dividerVertical" />
+		
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+
+		<Button
+		    android:id="@+id/show_students"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_centerHorizontal="true"
+		    android:background="?android:attr/selectableItemBackground"
+		    android:onClick="showStudents"
+		    android:text="@string/button_students" />
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:layout_below="@id/show_students"
+		    android:background="?android:attr/dividerVertical" />
+		<Button
+		    android:id="@+id/show_assignments"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="?android:attr/selectableItemBackground"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@id/show_students"
+		    android:onClick="showAssignments"
+		    android:text="@string/button_assignments" />
+		
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:layout_below="@id/show_assignments"
+		    android:background="?android:attr/dividerVertical" />
+		
+		<Button
+		    android:id="@+id/load_grades"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="?android:attr/selectableItemBackground"
+	        android:layout_below="@id/show_assignments"
+	        android:text="@string/button_load_grades_file"
+	        android:onClick="chooseGradesFile" />
+		
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:layout_below="@id/load_grades"
+		    android:background="?android:attr/dividerVertical" />
+		
+	    <Button
+	        android:id="@+id/load_lessonplan"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="?android:attr/selectableItemBackground"
+	        android:layout_below="@id/load_grades"
+	        android:text="@string/button_load_lessonplan_file"
+	        android:onClick="chooseLessonPlanFile" />
+	    
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:layout_below="@id/load_lessonplan"
+		    android:background="?android:attr/dividerVertical" />
+		
+		<Button
+	        android:id="@+id/load_Teams"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="?android:attr/selectableItemBackground"
+	        android:layout_below="@id/load_lessonplan"
+	        android:text="@string/button_load_teams_file"
+	        android:onClick="chooseTeamsFile" />
+	    
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:layout_below="@id/load_Teams"
+		    android:background="?android:attr/dividerVertical" />
+		
+		</RelativeLayout>
+		
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="48dp" >
+
+		    <View
+		        android:id="@+id/ViewColorPickerHelper"
+		        android:layout_width="1dip"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginBottom="4dip"
+		        android:layout_marginTop="4dip"
+		        android:background="?android:attr/dividerVertical" />
+
+		    <Button
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_toLeftOf="@id/ViewColorPickerHelper"
+		        android:background="?android:attr/selectableItemBackground"
+		        android:onClick="saveEdits"
+		        android:text="@string/button_confirm" />
+
+		    <Button
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_toRightOf="@+id/ViewColorPickerHelper"
+		        android:background="?android:attr/selectableItemBackground"
+		        android:onClick="cancelEdit"
+		        android:text="@string/button_cancel" />
+
+		</RelativeLayout>
+
+	</LinearLayout>
+</ScrollView>

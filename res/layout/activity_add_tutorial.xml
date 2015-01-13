@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+    
+	    <EditText android:id="@+id/class_name"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/class_name_prompt" />
+	    
+	    <EditText android:id="@+id/tutorial_section"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/tutorial_section_prompt" />
+	    
+	    <EditText android:id="@+id/professor_name"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/professor_name_prompt" />
+	    
+	    <EditText android:id="@+id/professor_email"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/professor_email_prompt" />
+	    
+	    <EditText android:id="@+id/tutorial_location"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/tutorial_location_prompt" />
+	    
+	        
+	    <EditText android:id="@+id/lesson_plan"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/lesson_plan_prompt" />
+	    
+	    <HorizontalScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        
+	        <EditText
+		        android:id="@+id/tutorial_students"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:hint="@string/tutorial_students_prompt" />
+	    </HorizontalScrollView>
+	    
+	
+	    <TimePicker android:id="@+id/tutorial_time"
+	        android:layout_gravity="center"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	       
+	    <View
+			android:layout_width="match_parent"
+           	android:layout_height="1dip"
+           	android:layout_marginLeft="4dip"
+           	android:layout_marginRight="4dip"
+           	android:background="?android:attr/dividerVertical" />
+       
+       	<DatePicker
+           	android:id="@+id/tutorial_date"
+           	android:layout_gravity="center"
+           	android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+           	android:spinnersShown="false" />
+	
+       	<View
+			android:layout_width="match_parent"
+           	android:layout_height="1dip"
+           	android:layout_marginLeft="4dip"
+           	android:layout_marginRight="4dip"
+           	android:background="?android:attr/dividerVertical" />
+       	
+       	<LinearLayout
+       	    android:layout_width="match_parent"
+       	    android:layout_height="wrap_content"
+       	    android:padding="5dp"
+       	    android:orientation="horizontal" >
+       	    
+       	    <CheckBox android:id="@+id/reminder_toggle"
+       	        android:layout_width="wrap_content"
+       	        android:layout_height="wrap_content" />
+       	    
+       	    <TextView
+       	        android:layout_width="wrap_content"
+       	        android:layout_height="wrap_content"
+       	        android:text="@string/tutorial_reminder" />
+       	    
+       	    <EditText android:id="@+id/tutorial_reminder"
+       	        android:layout_width="wrap_content"
+       	        android:layout_height="wrap_content"
+       	        android:hint="@string/reminder_time"
+       	        android:text="@string/reminder_time" />
+       	    
+       	    <TextView
+       	        android:layout_width="wrap_content"
+       	        android:layout_height="wrap_content"
+       	        android:text="@string/tutorial_reminder2" />
+       	</LinearLayout>
+       	
+       	<EditText android:id="@+id/reminder_message"
+       	    android:padding="5dp"
+       	    android:layout_width="match_parent"
+       	    android:layout_height="wrap_content"
+       	    android:hint="@string/reminder_message" />
+       	
+	    <RelativeLayout
+	       android:layout_width="match_parent"
+	       android:layout_height="48dp" >
+	       
+	       <View
+	           android:layout_width="match_parent"
+	           android:layout_height="1dip"
+	           android:layout_marginLeft="4dip"
+	           android:layout_marginRight="4dip"
+	           android:background="?android:attr/dividerVertical"
+	           android:layout_alignParentTop="true" />
+	       
+	       <View
+	           android:id="@+id/ViewColorPickerHelper"
+	           android:layout_width="1dip"
+	           android:layout_height="wrap_content"
+	           android:layout_alignParentTop="true"
+	           android:layout_alignParentBottom="true"
+	           android:layout_marginBottom="4dip"
+	           android:layout_marginTop="4dip"
+	           android:background="?android:attr/dividerVertical" 
+	           android:layout_centerHorizontal="true" />
+	       
+	       <Button
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_alignParentLeft="true"
+	           android:layout_alignParentTop="true"
+	           android:layout_alignParentBottom="true"
+	           android:layout_toLeftOf="@id/ViewColorPickerHelper"
+	           android:background="?android:attr/selectableItemBackground"
+	           android:text="@string/button_confirm"
+	           android:onClick="saveTutorial" />
+	       
+	       <Button
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_alignParentRight="true"
+	           android:layout_alignParentTop="true"
+	           android:layout_toRightOf="@+id/ViewColorPickerHelper"
+	           android:layout_alignParentBottom="true"
+	           android:background="?android:attr/selectableItemBackground"
+	           android:text="@string/button_cancel"
+	           android:onClick="cancelAddTutorial" />
+
+	   </RelativeLayout>
+	   <Button
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:background="?android:attr/selectableItemBackground"
+	           android:text="@string/button_load_grades_file"
+	           android:onClick="chooseGradesFile" />
+	   <Button
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:background="?android:attr/selectableItemBackground"
+	           android:text="@string/button_load_lessonplan_file"
+	           android:onClick="chooseLessonPlanFile" />
+	   <Button
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:background="?android:attr/selectableItemBackground"
+	           android:text="@string/button_load_teams_file"
+	           android:onClick="chooseTeamsFile" />
+	</LinearLayout>
+	
+</ScrollView>

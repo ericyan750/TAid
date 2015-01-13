@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="coding.gone.wrong.taid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="coding.gone.wrong.taid.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="coding.gone.wrong.taid.AddTutorialActivity"
+            android:label="@string/title_activity_add_tutorial" >
+        </activity>
+        <activity
+            android:name="coding.gone.wrong.taid.EditTutorialActivity"
+            android:label="@string/title_activity_edit_tutorial" >
+        </activity>
+        <activity
+            android:name="coding.gone.wrong.taid.EmailActivity"
+            android:label="@string/title_activity_email" >
+        </activity>
+        <activity
+            android:name="coding.gone.wrong.taid.ShowStudentsActivity"
+            android:label="@string/title_activity_show_students"
+            android:parentActivityName="coding.gone.wrong.taid.EditTutorialActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="coding.gone.wrong.taid.EditTutorialActivity" />
+        </activity>
+        <activity
+            android:name="coding.gone.wrong.taid.EditCommentActivity"
+            android:label="@string/title_activity_edit_comment"
+            android:parentActivityName="coding.gone.wrong.taid.ShowStudentsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="coding.gone.wrong.taid.ShowStudentsActivity" />
+        </activity>
+        <activity
+            android:name="coding.gone.wrong.taid.ChooseFile"
+            android:label="@string/title_activity_choose_file" >
+        </activity>
+        <activity
+            android:name="coding.gone.wrong.taid.ShowAssignmentsActivity"
+            android:label="@string/title_activity_show_assignments" >
+        </activity>
+        <activity
+            android:name="coding.gone.wrong.taid.ViewTeamsActivity"
+            android:label="@string/title_activity_view_teams" >
+        </activity>
+    </application>
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Tests"
+        android:targetPackage="com.example.app" />
+
+</manifest>

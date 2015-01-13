@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical"
+    tools:context=".EditCommentActivity" >
+
+    <EditText android:id="@+id/edit_comment"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+		        android:hint="@string/comment_prompt" />
+    <View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="?android:attr/dividerVertical" />
+    <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="48dp" >
+
+		    <View
+		        android:id="@+id/ViewColorPickerHelper"
+		        android:layout_width="1dip"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginBottom="4dip"
+		        android:layout_marginTop="4dip"
+		        android:background="?android:attr/dividerVertical" />
+
+		    <Button
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_toLeftOf="@id/ViewColorPickerHelper"
+		        android:background="?android:attr/selectableItemBackground"
+		        android:onClick="saveComments"
+		        android:text="@string/button_confirm" />
+
+		    <Button
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_toRightOf="@+id/ViewColorPickerHelper"
+		        android:background="?android:attr/selectableItemBackground"
+		        android:onClick="cancel"
+		        android:text="@string/button_cancel" />
+
+		</RelativeLayout>
+
+</LinearLayout>
